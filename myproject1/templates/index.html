@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Webpage</title>
+</head>
+
+<body>
+<h1>Welcome to the WebSite Of Anish Dhiman!!!!!</h1>
+<h2>Please enter your thoughts and press the Submit button : </h2>
+<form action='/analyze' method = 'post'> {% csrf_token %}
+    <textarea name="text" id cols="30" rows="10" style="width: 1495px; height: 202px;"></textarea><br>
+    <input type="checkbox" name = "removpunc" >Please check this box if you want to remove punctuations from your text<br>
+    <input type="checkbox" name = "caps" >Please check this box if you want to capitalize your text<br>
+    <input type="checkbox" name = "count" >Please check this box if you want to count the numbers of your text<br>
+    <button type="submit"> Submit</button>
+</form>
+</body>
+</html>
